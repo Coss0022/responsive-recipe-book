@@ -1,0 +1,22 @@
+html {
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: quiche-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ingd-list {
+  font-family: freight-text-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+font-family: wreath, serif;
+font-weight: 500;
+font-style: normal;
+color: #d12229;

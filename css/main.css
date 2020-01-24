@@ -10,13 +10,52 @@ h1, h2 {
   font-style: normal;
 }
 
+.current {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.current:focus,
+.current:hover,
+.btn-ghost:focus,
+.btn-ghost:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  z-index: 2000;
+}
+
 .ingd-list {
   font-family: freight-text-pro, serif;
   font-weight: 700;
   font-style: normal;
 }
 
-font-family: wreath, serif;
-font-weight: 500;
-font-style: normal;
-color: #d12229;
+dt {
+  font-family: wreath, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d12229;
+}

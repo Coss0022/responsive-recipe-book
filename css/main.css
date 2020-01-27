@@ -4,25 +4,57 @@ html {
   font-style: normal;
 }
 
+header {
+  border-bottom: 3px solid #d12229;
+}
+
 h1, h2 {
   font-family: quiche-text, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.current {
-  background-color: #333;
-  border-color: #333;
-  color: #fff;
+.home-btn {
+  text-decoration: none;
 }
 
-.current:focus,
-.current:hover,
-.btn-ghost:focus,
-.btn-ghost:hover {
-  background-color: #000;
-  border-color: #000;
+.title-one {
+  font-family: wreath, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d12229;
+}
+
+.title-two {
+  font-family: quiche-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.btn {
+  font-family: quiche-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+  border: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #d12229;
   color: #fff;
+  border-radius: 0;
+}
+
+.dropdown {
+  background-color: #d12229;
+}
+
+.small-hide {
+  display: none;
 }
 
 ul li ul {
@@ -33,7 +65,6 @@ ul li ul {
   display: none;
 }
 
-ul li:hover > ul,
 ul li:focus-within > ul,
 ul li ul:hover {
   visibility: visible;
@@ -51,6 +82,18 @@ ul li ul li {
   font-family: freight-text-pro, serif;
   font-weight: 700;
   font-style: normal;
+  font-kerning: auto;
+}
+
+.prep-list {
+  font-kerning: auto;
+}
+
+.hang-punc {
+  font-family: wreath, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d12229;
 }
 
 dt {
@@ -58,4 +101,32 @@ dt {
   font-weight: 500;
   font-style: normal;
   color: #d12229;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .small-hide {
+    display: inline-block;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .logo {
+    margin: 0;
+  }
+
+  .big-right {
+    text-align: right;
+  }
+
+  .home {
+    text-align: left;
+  }
+
 }

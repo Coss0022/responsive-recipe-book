@@ -33,6 +33,13 @@ h1, h2 {
   color: #000;
 }
 
+.second-line {
+  font-family: quiche-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+}
+
 .btn {
   font-family: quiche-text, sans-serif;
   font-weight: 500;
@@ -103,6 +110,23 @@ dt {
   color: #d12229;
 }
 
+.btn-light {
+  font-family: quiche-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-light:hover {
+  color: #d12229;
+  background-color: #fff;
+}
+
+footer {
+  border-top: 3px solid #d12229;
+}
+
 @media only screen and (min-width: 25em) {
 
   .small-hide {
@@ -111,6 +135,17 @@ dt {
 
   .home {
     text-align: center;
+  }
+
+  .hang-punc {
+    float: left;
+    margin-left: -1.8em;
+    text-align: right;
+    width: 1.3em;
+  }
+
+  .prep-list {
+    padding-left: 1em;
   }
 
 }
@@ -127,6 +162,10 @@ dt {
 
   .home {
     text-align: left;
+  }
+
+  .prep-list {
+    padding-left: 0;
   }
 
 }

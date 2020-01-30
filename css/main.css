@@ -14,6 +14,36 @@ h1, h2 {
   font-style: normal;
 }
 
+.dropdown {
+  background-color: #d12229;
+}
+
+.small-hide {
+  display: none;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 200%;
+  z-index: 2000;
+  background-color: #d12229
+}
+
 .home-btn {
   text-decoration: none;
 }
@@ -54,35 +84,6 @@ h1, h2 {
   background-color: #d12229;
   color: #fff;
   border-radius: 0;
-}
-
-.dropdown {
-  background-color: #d12229;
-}
-
-.small-hide {
-  display: none;
-}
-
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  display: none;
-}
-
-ul li:focus-within > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
-  z-index: 2000;
 }
 
 .ingd-list {
